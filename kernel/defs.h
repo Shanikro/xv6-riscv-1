@@ -191,3 +191,10 @@ void            virtio_disk_intr(void);
 // Task 0 - rand.c
 void            lcg_srand(uint);
 uint            lcg_rand(void);
+
+// Task 1 - israelilock.c
+void            israeli_init(void);
+int             israeli_create(int);
+int             israeli_acquire(int);
+int             israeli_release(int);
+int             israeli_destroy(int);

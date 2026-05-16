@@ -94,7 +94,7 @@ sys_uptime(void)
 uint64
 sys_lcg_srand(void)
 {
-  uint seed;
+  int seed;
   argint(0, &seed); // get seed from user
   lcg_srand(seed);
   return 0;
@@ -104,4 +104,51 @@ uint64
 sys_lcg_rand(void)
 {
   return lcg_rand();
+}
+
+// Task 1
+uint64
+sys_setgid(void)
+{
+  int gid;
+  argint(0, &gid); // get gid from user
+  myproc()->gid = gid;
+  return 0;
+}
+
+uint64
+sys_getgid(void){
+  return myproc()->gid;
+}
+
+uint64
+sys_israeli_create(void)
+{
+  int favoritism;
+  argint(0, &favoritism);
+  return israeli_create(favoritism); // create israeli lock with favoritism
+}
+
+uint64
+sys_israeli_acquire(void)
+{
+  int lock_id;
+  argint(0, &lock_id); // get lock_id from user
+  return israeli_acquire(lock_id);
+}
+
+uint64
+sys_israeli_release(void)
+{
+  int lock_id;
+  argint(0, &lock_id); // get lock_id from user
+  return israeli_release(lock_id);
+}
+
+uint64
+sys_israeli_destroy(void)
+{
+  int lock_id;
+  argint(0, &lock_id); // get lock_id from user
+  return israeli_destroy(lock_id);
 }

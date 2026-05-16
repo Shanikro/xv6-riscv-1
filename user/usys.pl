@@ -37,6 +37,14 @@ entry("sbrk");
 entry("sleep");
 entry("uptime");
 
-// Task 0
+# Task 0
 entry("lcg_srand");
 entry("lcg_rand");
+
+# Task 1
+entry("setgid");
+entry("getgid");
+entry("israeli_create");
+entry("israeli_acquire");
+entry("israeli_release");
+entry("israeli_destroy");

@@ -23,3 +23,10 @@
 // Task 0
 #define SYS_lcg_srand 22
 #define SYS_lcg_rand 23
+// Task 1
+#define SYS_setgid 24
+#define SYS_getgid 25
+#define SYS_israeli_create 26
+#define SYS_israeli_acquire 27
+#define SYS_israeli_release 28
+#define SYS_israeli_destroy 29

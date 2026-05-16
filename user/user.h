@@ -25,7 +25,13 @@ int uptime(void);
 // Task 0
 void lcg_srand(uint);
 uint lcg_rand(void);
-
+// Task 1
+void setgid(int);
+int getgid(void);
+int israeli_create(int);
+int israeli_acquire(int);
+int israeli_release(int);
+int israeli_destroy(int);
 // ulib.c
 int stat(const char*, struct stat*);
 char* strcpy(char*, const char*);
