@@ -5,7 +5,7 @@
 #define NTEAMS       3
 #define RUNNERS_TEAM 5
 #define TARGET       30
-#define FAVORITISM   0
+#define FAVORITISM   50
 
 int
 main(void)
