@@ -41,11 +41,6 @@ entry("uptime");
 entry("lcg_srand");
 entry("lcg_rand");
 
-# Task 2
-entry("score_init");
-entry("score_inc");
-entry("score_get");
-
 # Task 1
 entry("setgid");
 entry("getgid");
@@ -53,3 +48,8 @@ entry("israeli_create");
 entry("israeli_acquire");
 entry("israeli_release");
 entry("israeli_destroy");
+
+# Task 2
+entry("score_init");
+entry("score_inc");
+entry("score_get");
