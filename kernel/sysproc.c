@@ -152,3 +152,29 @@ sys_israeli_destroy(void)
   argint(0, &lock_id); // get lock_id from user
   return israeli_destroy(lock_id);
 }
+
+// Task 2 - scores
+uint64
+sys_score_init(void)
+{
+  int n; // get number of teams from user
+  argint(0, &n);
+  score_init(n);
+  return 0;
+}
+
+uint64
+sys_score_inc(void)
+{
+  int team_id;
+  argint(0, &team_id);
+  return score_inc(team_id);
+}
+
+uint64
+sys_score_get(void)
+{
+  int team_id;
+  argint(0, &team_id);
+  return score_get(team_id);
+}

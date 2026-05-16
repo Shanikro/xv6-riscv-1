@@ -20,6 +20,7 @@ OBJS = \
   $K/sysproc.o \
   $K/rand.o \
   $K/israelilock.o \
+  $K/scores.o \
   $K/bio.o \
   $K/fs.o \
   $K/log.o \
@@ -136,6 +137,7 @@ UPROGS=\
 	$U/_zombie\
 	$U/_randtest\
 	$U/_israelitest\
+	$U/_relay_race\
 
 fs.img: mkfs/mkfs README $(UPROGS)
 	mkfs/mkfs fs.img README $(UPROGS)

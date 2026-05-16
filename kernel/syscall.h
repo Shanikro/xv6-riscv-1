@@ -30,3 +30,7 @@
 #define SYS_israeli_acquire 27
 #define SYS_israeli_release 28
 #define SYS_israeli_destroy 29
+// Task 2
+#define SYS_score_init 30
+#define SYS_score_inc  31
+#define SYS_score_get  32

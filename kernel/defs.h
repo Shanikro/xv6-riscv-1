@@ -198,3 +198,7 @@ int             israeli_create(int);
 int             israeli_acquire(int);
 int             israeli_release(int);
 int             israeli_destroy(int);
+// Task 2 - scores
+void            score_init(int);
+int             score_inc(int);
+int             score_get(int);
