@@ -36,3 +36,7 @@ entry("getpid");
 entry("sbrk");
 entry("sleep");
 entry("uptime");
+
+// Task 0
+entry("lcg_srand");
+entry("lcg_rand");

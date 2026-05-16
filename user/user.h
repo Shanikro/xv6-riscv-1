@@ -22,6 +22,9 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+// Task 0
+void lcg_srand(uint);
+uint lcg_rand(void);
 
 // ulib.c
 int stat(const char*, struct stat*);

@@ -89,3 +89,19 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+// Task 0
+uint64
+sys_lcg_srand(void)
+{
+  uint seed;
+  argint(0, &seed); // get seed from user
+  lcg_srand(seed);
+  return 0;
+}
+
+uint64
+sys_lcg_rand(void)
+{
+  return lcg_rand();
+}

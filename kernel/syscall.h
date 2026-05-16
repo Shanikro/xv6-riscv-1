@@ -20,3 +20,6 @@
 #define SYS_link   19
 #define SYS_mkdir  20
 #define SYS_close  21
+// Task 0
+#define SYS_lcg_srand 22
+#define SYS_lcg_rand 23
